@@ -35,27 +35,34 @@ function processNext() {
     document.getElementById("puppy").src = arrMyPix[thePic];
 }
 
-// Display text functions for the portfolio.html page
+// Display text functions for the portfolio.html page to help clear space in the html document
+// Displays text for the first objective
 function displayObjOne() {
     document.getElementById("myText").innerHTML = "Follow a software development process to analyze a problem and to design, build and test software solutions."
 }
 
+// Displays text for the second objective
 function displayObjTwo() {
     document.getElementById("myTextTwo").innerHTML = "Demonstrate software development skills using more than one programming language and development environment."
 }
 
+// Display text for the third objective
 function displayObjThree() {
     document.getElementById("myTextThree").innerHTML = "Implement data-driven solutions."
 }
 
+// Displays text for the fourth objective
 function displayObjFour() {
     document.getElementById("myTextFour").innerHTML = "Design and implement software solutions for mobile devices, embedded systems and/or multiple platforms."
 }
 
+// Displays text for the fifth objective
 function displayObjFive() {
     document.getElementById("myTextFive").innerHTML = "Document the planning and development of software applications using industry standard tools, techniques and processes."
 }
 
+// Displays text for the sixth objective.
 function displayObjSix() {
     document.getElementById("myTextSix").innerHTML = "Within software solutions describe, implement and analyze data structure techniques such as lists, trees, hash tables and graphs, along with sorting and searching algorithms."
 }
+
