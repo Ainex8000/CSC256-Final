@@ -10,5 +10,17 @@ function addInfo() {
     document.getElementById("email").innerHTML = "xendenoy@uat.edu";
 }
 
-// Initialize info on page load
-window.addEventListener("load", addInfo);
+// JavaScript for the index.html to create typing effect
+var i = 0;
+var txt = 'Get in Contact with Me'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("contact").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.addEventListener("load", typeWriter);
