@@ -88,8 +88,9 @@ li {
     padding: 10px;
     border-radius: 4px;
     margin-top: 20px;
-    margin-right: 250px;
-    margin-left: 250px;
+    margin-right: 450px;
+    margin-left: 450px;
+    text-align: center;
 }
 
 .sectionheader {
@@ -105,6 +106,18 @@ li {
     padding: 10px;
 }
 
+.sectionTable{
+    color: white;
+    background-color: #0B2545;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-right: 350px;
+    margin-left: 350px;
+    text-align: center;
+    font-size: 23px;
+}
+
 a:visited{
 	color: #c6c8e0;
 }
@@ -113,7 +126,12 @@ a:link{
     color: #c6c8e0;
 }
 
-
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #EEF4ED;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 
 /* Add a background color to the top navigation */
 .topnav {
@@ -169,3 +187,51 @@ table {
     top:0;
 }
 
+/* Language Icons */
+.language {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.language__img {
+    width: 100%;
+    height: 150px;
+    max-width: 150px;
+    transition: all 300ms ease;
+}
+
+.language:hover .language__img {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+
+.language__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.language__name {
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+    opacity: 0;
+    color: white;
+}
+
+.language:hover .language__name {
+    transform: scale(1);
+    opacity: 1;
+}
