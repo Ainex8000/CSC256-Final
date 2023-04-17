@@ -1,5 +1,20 @@
 // JavaScript Document - Xenia DeNoyer, Spring 2023
 
+// JavaScript for the index.html to create typing effect
+var i = 0;
+var txt = 'Welcome to my webpage, here you can find my contact information, my portfolio, and a little bit about me.'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.addEventListener("load", typeWriter);
+
 // This the JavaScript for the slideshow on the about.html page
 // Loads on start
 window.onload = initLinks;
