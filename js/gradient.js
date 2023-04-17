@@ -75,3 +75,18 @@ window.addEventListener('load', function () {
     currentGradient = generateRandomGradient();
     document.body.style.backgroundImage = currentGradient;
 });
+
+// JavaScript to create typing effect
+var i = 0;
+var txt = 'Gradient Background Changer'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("gradient").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.addEventListener("load", typeWriter);
